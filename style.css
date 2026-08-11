@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fbf4;
+    color: #1c2b1c;
+}
+
+
+/* MENU */
+
+.menu {
+    background: linear-gradient(
+        90deg,
+        #3c8d0d,
+        #6ebc17
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 5%;
+
+    color: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #4d9d13;
+}
+
+.whatsapp {
+    background-color: #24740e;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 22px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+
+    padding: 50px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #fbfff8,
+        #eff8df
+    );
+}
+
+.hero-card {
+    background-color: white;
+
+    width: 500px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.15);
+}
+
+.icono {
+    font-size: 55px;
+}
+
+.hero-card h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.linea {
+    width: 100px;
+    height: 4px;
+
+    background-color: #60a917;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+}
+
+.hero-card p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.hero-card strong {
+    color: #55a414;
+}
+
+
+/* BOTONES */
+
+button {
+    background: linear-gradient(
+        90deg,
+        #34860d,
+        #61ad16
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 16px 30px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.20);
+}
+
+
+/* IMAGEN */
+
+.hero-imagen {
+    width: 550px;
+}
+
+.hero-imagen img {
+    width: 100%;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+/* INFORMACION */
+
+.informacion {
+    padding: 60px 7%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.informacion h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.linea-centro {
+    width: 90px;
+    height: 4px;
+
+    background-color: #60a917;
+
+    margin: 0 auto 45px auto;
+
+    border-radius: 10px;
+}
+
+
+/* TARJETAS */
+
+.tarjetas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 350px;
+
+    min-height: 280px;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f4faeb
+    );
+
+    border: 1px solid #dcebc9;
+
+    padding: 45px 30px 30px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.12);
+}
+
+.circulo {
+    width: 75px;
+    height: 75px;
+
+    background-color: #67b318;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+
+    position: absolute;
+
+    top: -38px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.tarjeta h3 {
+    margin-top: 15px;
+
+    color: #4c9116;
+
+    font-size: 24px;
+}
+
+.tarjeta p {
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* REGRESAR */
+
+.regresar {
+    margin-top: 40px;
+}
+
+
+/* OCULTAR */
+
+.oculto {
+    display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(
+        90deg,
+        #2d7b0b,
+        #5daa15
+    );
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 6%;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.redes {
+    font-weight: bold;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .hero-imagen {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
